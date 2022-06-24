@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>자바 스크립트</h1>
+	
+	<h2>배열</h2>
+	
+</body>
+
+	<script type="text/javascript">
+		
+		var guestbookVo = {
+			name:"김범준",
+			passwore:"1234",
+			content:"닭가슴살 먹는 범준이",
+			showinfo:function(){
+				console.log(this.name + "," + this.password + "," + this.content);
+			}
+		}
+		var name = guestbookVo.name;
+		var content = guestbookVo.content;
+		console.log(name);
+		console.log(content);
+		console.log(guestbookVo);
+		guestbookVo.showinfo();
+		
+		////////////////////////////////////////////////
+		
+		var personVo01 = {
+						name:"김민규", 
+						hp:"011-1111-1111", 
+						company:"02-2222-2222",
+		};
+		
+		console.log(personVo01);
+		
+		//company 값이 나중에 정해질때
+		var personVo02 = {
+						name:"김민규",
+						hp:"010-1111-1111",
+		}
+		//추후에 추가
+		personVo02.company="002-2222-2222"
+		personVo02.age=49;
+		console.log(personVo02);
+		
+		/////////////////////////////
+		var personVo03 = {};
+		personVo03.name="구름탄종빈이";
+		personVo03.ph="010-1234-5678";
+		personVo03.company="02-7895-6512";
+		
+		console.log(personVo03);
+	</script>
+
+</html>
