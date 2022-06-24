@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>자바 스크립트</h1>
+	
+	<h2>배열</h2>
+	
+</body>
+	
+	<script type="text/javascript">
+		
+		var array = [];
+		array[0] = 1;
+		array[1] = 2.5;
+		array[2] = "안녕";
+		array[3] = "구름탄종빈이 뀨";
+		
+		console.log(array[3]);
+		console.log(array[1]);
+		console.log(array[2]);
+		console.log(array[0]);
+		
+		console.log(array);
+		
+		console.log("-----------------------------------")
+		for(i=0; i<array.length; i++){
+			data = array[i];
+			console.log(data);
+			
+			console.log("-----------------------------------")
+			
+			//여러타입의 값들이 담긴다.
+			var array2 = [27,"민규",true, plus(3,3), function(){return 5+5}, [273,103]];
+			console.log(array2[0]); //27
+			console.log(array2[1]); //민규
+			console.log(array2[2]); //true
+			console.log(array2[3]); //6
+			console.log(array2[4]()); //10
+			console.log(array2[5][1]); // 103
+		
+			function plus(a,b){
+				var sum = a+b;
+				return sum;
+			}
+			
+		}
+		
+	</script>
+	
+</html>
