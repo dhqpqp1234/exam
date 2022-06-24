@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input id="left" type="text" value=""> + <input id="right" type="text" value=""> <br>
+	<button id="plustButton" type="button">더하기</button>
+	
+	<p id="display"></p>
+</body>
+
+	<script type="text/javascript">
+		
+		window.onload = function(){
+			
+			var plustButton = document.getElementById("plustButton");
+			var left = document.getElementById("left");
+			var right = document.getElementById("right");
+			var display = document.getElementById("display");
+			console.log(display);
+			
+			
+			//버튼을 클릭했을때(이벤트)
+			plustButton.onclick = function(){
+				console.log("버튼클릭");
+				
+				var leftNo = left.value;
+				var rightNo = right.value;
+				var sum = parseInt(rightNo)+ parseInt(leftNo); //문자열로 인식해서 숫자형으로 형변환
+				display.innerHTML = sum;
+			};
+			
+		};
+	
+	</script>
+	
+</html>
