@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>자바스크립트</h1>
+	
+	<h2>함수</h2>
+	
+</body>
+
+	<script type="text/javascript">
+		
+		//익명함수 위에서부터 순서대로 해석
+		var test =  function(){
+			console.log("testA함수 입니다.")
+			document.write("testA함수 입니다.<br>");
+		}
+		
+		//기명함수 (정의먼저 해서 test()위치 상관없음)  / 선언적 함수가 먼저 해석됨
+		function test(){
+			console.log("testA함수 입니다.")
+			document.write("testA함수 입니다.");
+		}
+		
+		test();	// 기명함수를 먼저 정의하고 익명함수를 정의
+	</script>
+
+</html>

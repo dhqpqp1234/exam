@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>자바 스크립트</h1>
+	
+	<h2>함수(펑션)</h2>
+	
+</body>
+
+	<script type="text/javascript">
+		/* test01
+		var name = "global";	//전역변수
+		
+		//함수정의  
+		function checkScope(){
+			var name = "local";	//지역변수 함수지역안에서만 사용
+			console.log(name);
+			
+		}
+		checkScope();	// ------> local
+		
+		console.log(name);		// ------> global
+		
+		var no = 3;
+		//no = 3; var안써도 문법적으로 틀리지 않음
+		console.log(no);
+		*/
+		
+		/* ---------------------------------------------------------------- */
+		
+		//test2 변수선언할때 var 사용여부에 따라 다르다
+		//var을 사용 않하면 전역변수로 된다.
+		var name = "global";
+		
+		//정의
+		function checkScope(){
+			name = "local";
+			name2 = "로컬";
+		}
+		
+		checkScope();
+		console.log(name);		// var사용 global     var사용x local
+		console.log(name2);		//var사용 에러 		var사용x	로컬
+	</script>
+	
+</html>

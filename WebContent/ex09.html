@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>자바스크립트</h1>
+	
+	<h2>함수</h2>
+		
+</body>
+
+	<script type="text/javascript">
+		
+		// 순서상관없이 위에써도 가능 
+		//testA();
+		
+		//기명함수 (이름이 있는 함수 or 선언적 함수)	-----> 정의부분부터 조사된다.
+		function testA(){		//	-------> 정의
+			console.log("testA 함수입니다.");
+			document.write("testA 함수입니다.<br>");
+		}
+		
+		testA();		// ------->	사용  ---->	testA 이름,	()실행
+		
+		/* ------------------------------------------------------------------- */
+		
+		//testB();		---> 익명함수는 순서가 상관있음 변수에 대입되고 난 후에 사용이가능
+		
+		//익명함수 (이름이 없는 함수) ------> 실제로 이름이 없으면 사용할 수 없다. 변수에 대입해서 변수이름으로 사용
+		
+		var testB = function(){
+			console.log("익명 함수입니다.");
+			document.write("익명 함수입니다.");
+		}
+		
+		testB();		// ------->	사용  ---->	testA 이름,	()실행
+		
+		/* var no = 3; 
+		no();	함수가 아니라 사용불가능 */
+		
+	</script>
+
+	
+</html>
