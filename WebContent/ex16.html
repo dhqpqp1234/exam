@@ -11,4 +11,39 @@
 	<h2>배열 + 객체 ----> 리스트</h2>
 	
 </body>
+	
+	<script type="text/javascript">
+		var personList = [];
+		
+		var person01 = {
+				name:"최보승",
+				ph:"010-8888-7777",
+		};
+				
+		var person02 = {};
+		person02.name="김민규";
+		
+		person02.ph="010-7895-7855";
+		
+		var person03 = {
+				name:"김범준",
+		};
+		person03.hp="010-112-112";
+		
+		console.log(person01);
+		console.log(person02);
+		console.log(person03);
+		
+		personList[0] = person01;
+		personList[1] = person02;
+		personList[2] = person03;
+		
+		for(var i=0; i<personList.length; i++){
+			
+			console.log(personList[i].name);
+			
+		}
+		
+	</script>
+	
 </html>
